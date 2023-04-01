@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">konversi</string>
+    <string name="keterangan"><![CDATA[ *Rumus dari skala Celcius ke skala Fahrenheit => T (derajat C) = 9/5 T derajat Celsius + 32 \n
+    \n *Rumus dari skala Fahrenheit ke skala Celcius => T (derajat C) = 5/9 T derajat F – 32]]></string>
 </resources>

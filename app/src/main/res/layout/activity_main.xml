@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
 
-xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,45 +13,70 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="wrap_content">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Temperature Conversion"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center_horizontal"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="0dp">
 
-        <EditText
-            android:id="@+id/et_celsius"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter temperature in Celsius"
-            android:minHeight="48dp"
-            android:inputType="numberDecimal"
-            android:padding="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Temperature Conversion"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
 
-        <EditText
-            android:id="@+id/et_fahrenheit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter temperature in Fahrenheit"
-            android:minHeight="48dp"
-            android:padding="12dp"/>
+            <EditText
+                android:id="@+id/et_celsius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter temperature in Celsius"
+                android:inputType="numberDecimal"
+                android:minHeight="70dp"
+                android:padding="12dp" />
 
-        <Button
-            android:id="@+id/btn_convert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Convert"/>
+            <EditText
+                android:id="@+id/et_fahrenheit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter temperature in Fahrenheit"
+                android:minHeight="70dp"
+                android:padding="12dp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn_convert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert" />
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/keterangan"
+                android:padding="30dp"
+                android:text="@string/keterangan"
+                android:textSize="20dp" />
+            <Switch
+                android:id="@+id/switchDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Dark Mode"/>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
