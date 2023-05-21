@@ -31,41 +31,45 @@
 
 
             <EditText
-                android:id="@+id/et_celsius"
+                android:id="@+id/etCelsius"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter temperature in Celsius"
-                android:inputType="numberDecimal"
-                android:minHeight="70dp"
-                android:padding="12dp" />
+                android:hint="@string/celcius"
+                android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/et_fahrenheit"
+                android:id="@+id/etFahrenheit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter temperature in Fahrenheit"
-                android:minHeight="70dp"
-                android:padding="12dp" />
+                android:hint="@string/fahrenheit"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etKelvin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/kelvin"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etReamur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reamur"
+                android:inputType="numberDecimal" />
+
 
             <Button
-                android:id="@+id/btn_convert"
+                android:id="@+id/btnConvert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Convert" />
+
             <Button
-                android:id="@+id/btn_reset"
+                android:id="@+id/btnReset"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Reset" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/keterangan"
-                android:padding="30dp"
-                android:text="@string/keterangan"
-                android:textSize="20dp" />
             <Switch
                 android:id="@+id/switchDarkMode"
                 android:layout_width="match_parent"
@@ -74,6 +78,11 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:text="Dark Mode"/>
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
 
 
         </LinearLayout>
